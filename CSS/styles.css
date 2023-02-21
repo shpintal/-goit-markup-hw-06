@@ -42,7 +42,6 @@ address {
 }
 
 .envelope-icon {
-
     align-items: center;
     margin-right: 10px;
     fill: var(--secondary-text-color-studio);
@@ -565,7 +564,7 @@ display: flex;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    width: 1600;
+    width: 1600px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -578,7 +577,7 @@ display: flex;
 
 .portfolio-name-img {
     font-style: normal;
-    f font-weight: 700;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -785,7 +784,9 @@ display: flex;
 }
 
 .contact-form-field {
-    display: block;
+    
+    position: relative;
+  
 
 }
 
@@ -804,7 +805,7 @@ display: flex;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        /* identical to box height, or 125% */
+       
     
         display: flex;
         align-items: center;
@@ -849,13 +850,7 @@ display: flex;
     color: var(--primary-text-color-studio);
 }
 
-.contact-form-input-wrepper {
-    display: block;
-    position: relative;
-    margin-bottom: 4px;
-    
 
-}
 
 .contact-form-text {
     font-family: var(--primari-font-family);
@@ -865,6 +860,7 @@ display: flex;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-studio);
+    margin-top: 10px;
 }
 
 .contact-form-icon {
@@ -896,7 +892,10 @@ display: flex;
 }
 
 .contact-form-checkbox-wrapper {
+   display:flex;
+   justify-content: center;
     margin-bottom: 30px;
+    
      
 }
 
@@ -978,6 +977,15 @@ color: var(--hover_focus-color);
 .contact-form-checkbox-label{
 display: flex;
 align-items: center;
+}
+
+.contact-form-checkbox:focus + .contact-form-checkbox-label::before{
+
+    border: 1px solid var(--hover_focus-color);
+
+    border-radius: 2px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before{
 background-image: url(../images/icon-check.svg);

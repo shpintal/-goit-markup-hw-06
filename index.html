@@ -29,10 +29,10 @@
           </li>
           <li class="nav-list-item">
             <a class="nav-list-link link " href="portfolio.html">Портфоліо</a>
-            </liclas="nav-list-item">
+            </li>
           <li class="nav-list-item">
             <a class="nav-list-link link " href="">Контакти</a>
-            </liclas="nav-list-item">
+            </li>
         </ul>
       </nav>
       <ul class="list list-addr">
@@ -60,7 +60,7 @@
   <main>
     <section class="section-main">
 
-      <!-- <img src="./images/what-do-we-do-1.jpg" alt="робочий  стіл блок-схема" width="1600" height="600"> -->
+      
       <div class="main-section-wrapp container">
         <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="modal-btn" type="button" data-modal-open>Замовити послугу</button>
@@ -429,10 +429,11 @@
         <ul class="footer-social-list-subscription list">
           <li class="social-list-item-subscription">
             <span class="footer-contact-form-input-wrepper">
-            <input name=" footer-user-mail" class="footer-contact-form-input" placeholder="E-mail" type="mail">
+            <input name="footer-user-mail" class="footer-contact-form-input" placeholder ="E-mail" type="email">
           </span>
           </li>
-          <li class="social-list-item-subscription">
+          </ul>
+          <form class="social-list-item-subscription">
             <button class="footer-contact-form-submit-btn"> Підписатися
               <svg width="24" height="24" class="footer-icon">
                 <use href="./images/sprite.svg#footer-icon-send">
@@ -440,9 +441,9 @@
                 </use>
               </svg>
             </button>
-          </li>
+          </form>
           
-        </ul>
+        
       </div>
 
     </div>
@@ -462,33 +463,33 @@
       <form class="coact-form">
         <label class="contact-form-field">
           <span class="contact-form-text">Ім'я</span>
-          <span class="contact-form-input-wrepper">
+          
             <input name="user-name" class="contact-form-input" type="text">
             <svg class="contact-form-icon" width="18px" height="18px">
               <use href="./images/sprite.svg#icon-contact-user"></use>
             </svg>
-          </span>
+          
 
 
         </label>
         <label class="contact-form-field">
           <span class="contact-form-text">Телефон</span>
-          <span class="contact-form-input-wrepper">
+          
             <input name="user-phone" class="contact-form-input" type="tel">
             <svg class="contact-form-icon" width="18px" height="18px">
               <use href="./images/sprite.svg#icon-contact-phone"></use>
             </svg>
-          </span>
+          
 
         </label>
         <label class="contact-form-field">
           <span class="contact-form-text">Пошта</span>
-          <span class="contact-form-input-wrepper">
-            <input name="user-mail" class="contact-form-input" type="mail">
+          
+            <input name="user-mail" class="contact-form-input" type="email">
             <svg class="contact-form-icon" width="18px" height="18px">
               <use href="./images/sprite.svg#icon-contact-mail"></use>
             </svg>
-          </span>
+          
 
         </label>
         <label class="contact-form-field">
@@ -497,10 +498,12 @@
         </label>
         <div class="contact-form-checkbox-wrapper">
           <input name="accept-police" class="contact-form-checkbox visually-hidden" id="policy-checkbox" type="checkbox" required>
+       
           <label for="policy-checkbox" class="contact-form-checkbox-label">
             <span class="contact-form-text"> Погоджуюся з розсилкою та приймаю <a class="contact-form-text-ref"
-                href="">Умови договору</a> </label>
-          </span>
+                href="">Умови договору</a> 
+           </span>
+          </label>
         </div>
         <button class="contact-form-submit-btn">Відправити</button>
 
