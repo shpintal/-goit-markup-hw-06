@@ -1004,7 +1004,8 @@ display: flex;
 align-items: center;
 }
 
-.contact-form-checkbox:focus + .contact-form-checkbox-label::before{
+.contact-form-checkbox:focus + .contact-form-checkbox-label::before,
+.contact-form-checkbox:hover + .contact-form-checkbox-label::before{
 
     border: 1px solid var(--hover_focus-color);
 
